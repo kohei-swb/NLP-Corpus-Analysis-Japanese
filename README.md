@@ -62,8 +62,8 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
     normalization.py  
 
     **Be sure to alter:**
-    - [line 36] input_file_path = <Path_of_Extracted_Sentences>
-    - [line 37] output_file_path = <Path_of_Normalized_Sentences>
+    - [line 36] input_file_path = <Path_of_Extracted_text>
+    - [line 37] output_file_path = <Path_of_Normalized_text>
   
     **This python script does:** 
     - Remove XML tags
@@ -76,15 +76,21 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
         Reference:
         [Normalization_codes](https://github.com/Hironsan/natural-language-preprocessings/blob/master/preprocessings/ja/normalization.py)
 
-5. Remove stop words by segmenting text into words
-remove_stopwords.py  
+5. Segment text into words
+  segmentation.py  
     **Be sure to alter:**
-    - [line 18] input_file_path = <Path_of_Extracted_Sentences>
-    - [line 19] output_file_path = <Path_of_Normalized_Sentences>
+    - [line 17] input_file_path = <Path_of_Normalized_text>
+    - [line 18] output_file_path = <Path_of_Segmented_text>
+
+6. Remove stop words from segmented text
+remove_stopwords.py
+    **Be sure to alter:**
+    - [line 17] input_file_path = <Path_of_Segmented_text>
+    - [line 18] output_file_path = <Path_of_Removed_stopWords_text>
 
 
-6. Perform morphological analysis on the text file and output the appearance rate of each word  
+7. Perform morphological analysis on the text file and output the appearance rate of each word  
 morphological_analysis.py  
     **Be sure to alter:**
-    - [line 40] input_file_path = <Path_of_Extracted_Sentences>
-    - [line 41] output_file_path = <Path_of_Normalized_Sentences>
+    - [line 40] input_file_path = <Path_of_Removed_stopWords_text>
+    - [line 41] output_file_path = <Path_of_Result_text>
