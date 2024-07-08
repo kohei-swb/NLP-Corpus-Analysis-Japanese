@@ -114,3 +114,8 @@ Execute [morphological_analysis.py](https://github.com/hei8san/NLP-Corpus-Analys
     **Be sure to alter:**
     - [line 40] input_file_path = <Path_of_Removed_stopWords_text>
     - [line 41] output_file_path = <Path_of_Result_text>
+10. **Opetional** Export result to a csv file  
+Execute [export_csv.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/export_csv.py)  
+    **Be sure to alter:**
+    - [line 25] input_file_path = <Path_of_result_text>
+    - [line 26] output_csv_file_path = <Path_of_output_csv_file>
