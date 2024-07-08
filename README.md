@@ -2,7 +2,12 @@
 
 1. **Download XML file of language corpora from** [Wikipedia Dump](https://dumps.wikimedia.org/jawiki/)
 2. **Extract downloaded XML file**
-3. **Install Mecab**
+3. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/NLP-Corpus-Analysis-Japanese.git
+   cd NLP-Corpus-Analysis-Japanese
+   ```
+4. **Install Mecab**
 - For MacOS, install Homebrew first, then:
    ```bash
    brew install mecab
@@ -43,7 +48,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
   
  You will notice the difference and accuracy of these outputs  
 
-4. **Extract sentences from XML file using**  
+5. **Extract sentences from XML file using**  
 [Wikipedia Dump Extractor](https://github.com/attardi/wikiextractor)  
    - install wikiextractor
     ```bash
@@ -58,7 +63,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
     ```bash
     python -m wikiextractor.WikiExtractor /Users/UserName/Documents/jawiki-20240220-pages-articles-multistream.xml -o extracted_sentences
     ```
-5. Extract and Save body sentences of each topic to files  
+6. Extract and Save body sentences of each topic to files  
 [list_topics.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/list_topics.py)  
 
     **Be sure to alter:**
@@ -66,7 +71,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
     <Path_of_Extracted_template_file>  
     - [line 40] output_file_path = <Path_of_Output_Directory>
 
-6. **Normalize the extracted sentences**  
+7. **Normalize the extracted sentences**  
     [normalization.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/normalization.py)  
 
     **Be sure to alter:**
@@ -84,13 +89,13 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
         Reference:
         [Normalization_codes](https://github.com/Hironsan/natural-language-preprocessings/blob/master/preprocessings/ja/normalization.py)
 
-7. Segment text into words  
+8. Segment text into words  
   [segmentation.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/segmentation.py)  
     **Be sure to alter:**
     - [line 17] input_file_path = <Path_of_Normalized_text>
     - [line 18] output_file_path = <Path_of_Segmented_text>
 
-8. Remove stop words from segmented text  
+9. Remove stop words from segmented text  
 [remove_stopwords.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/remove_stopwords.py)  
     **Be sure to alter:**
     - [line 17] input_file_path = <Path_of_Segmented_text>
