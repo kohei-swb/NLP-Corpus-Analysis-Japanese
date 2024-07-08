@@ -36,7 +36,7 @@ def extract_and_save_body_sentences(input_file_path, output_dir):
             
             print(f"Extracted sentences from doc id {doc_id} have been saved to {output_file_path}")
 
-input_file_path = '/Users/kohei/Documents/Precision_task/extracted_sentences/AA/wiki_00'
-output_dir = '/Users/kohei/Documents/Precision_task/list_of_titles'
+input_file_path = 'Path_of_Extracted_template_file'
+output_dir = 'Path_of_Output_Directory'
 
 extract_and_save_body_sentences(input_file_path, output_dir)
