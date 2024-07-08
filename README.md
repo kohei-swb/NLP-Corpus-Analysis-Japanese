@@ -44,7 +44,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
 
 3. **Extract sentences from XML file using** 
 [Wikipedia Dump Extractor](https://github.com/attardi/wikiextractor)
-   - install wikiextractor
+  - install wikiextractor
     ```bash
     pip install wikiextractor
     ```
@@ -83,7 +83,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
     - [line 18] output_file_path = <Path_of_Segmented_text>
 
 6. Remove stop words from segmented text
-remove_stopwords.py
+remove_stopwords.py  
     **Be sure to alter:**
     - [line 17] input_file_path = <Path_of_Segmented_text>
     - [line 18] output_file_path = <Path_of_Removed_stopWords_text>
