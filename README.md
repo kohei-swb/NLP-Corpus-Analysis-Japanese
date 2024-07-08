@@ -58,7 +58,7 @@ From the above example, "恋ダンス" should be recognized as one word, but wit
     python -m wikiextractor.WikiExtractor /Users/UserName/Documents/jawiki-20240220-pages-articles-multistream.xml -o extracted_sentences
     ```
 4. Extract and Save body sentences of each topic to files
-list_topics.py 
+[list_topics.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/list_topics.py)
 
     **Be sure to alter:**
     - [line 39] input_file_path =
@@ -66,7 +66,7 @@ list_topics.py
     - [line 40] output_file_path = <Path_of_Output_Directory>
 
 5. **Normalize the extracted sentences**
-    normalization.py  
+    [normalization.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/normalization.py)
 
     **Be sure to alter:**
     - [line 36] input_file_path = <Path_of_Extracted_text>
@@ -84,20 +84,20 @@ list_topics.py
         [Normalization_codes](https://github.com/Hironsan/natural-language-preprocessings/blob/master/preprocessings/ja/normalization.py)
 
 6. Segment text into words
-  segmentation.py  
+  [segmentation.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/segmentation.py)
     **Be sure to alter:**
     - [line 17] input_file_path = <Path_of_Normalized_text>
     - [line 18] output_file_path = <Path_of_Segmented_text>
 
 7. Remove stop words from segmented text
-remove_stopwords.py
+[remove_stopwords.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/remove_stopwords.py)
     **Be sure to alter:**
     - [line 17] input_file_path = <Path_of_Segmented_text>
     - [line 18] output_file_path = <Path_of_Removed_stopWords_text>
 
 
 8. Perform morphological analysis on the text file and output the appearance rate of each word  
-morphological_analysis.py  
+[morphological_analysis.py](https://github.com/hei8san/NLP-Corpus-Analysis-Japanese/blob/main/morphological_analysis.py)
     **Be sure to alter:**
     - [line 40] input_file_path = <Path_of_Removed_stopWords_text>
     - [line 41] output_file_path = <Path_of_Result_text>
