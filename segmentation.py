@@ -1,7 +1,7 @@
 import MeCab
 
 def morphological_analysis(text):
-    mecab = MeCab.Tagger("-Owakati -d ")
+    mecab = MeCab.Tagger('-Owakati -d /opt/homebrew/lib/mecab/dic/mecab-ipadic-neologd')
     processed = mecab.parse(text)
     return processed
 
