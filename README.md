@@ -1,6 +1,6 @@
 # NLP-Corpus-Analysis-Japanese
 
-1. **Download language corpora from** [Wikipedia Dump](https://dumps.wikimedia.org/jawiki/)
+1. **Download XML file of language corpora from** [Wikipedia Dump](https://dumps.wikimedia.org/jawiki/)
 2. **Install Mecab**
 - For MacOS, install Homebrew first, then:
    ```bash
